@@ -1,0 +1,3 @@
+/Users/andronovdima/Desktop/serv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/andronovdima/Desktop/serv/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/andronovdima/Desktop/serv/cmake-build-debug/CMakeFiles/server.dir

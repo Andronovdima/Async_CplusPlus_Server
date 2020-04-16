@@ -1,0 +1,102 @@
+//
+// Created by Андронов Дмитрий on 16.04.2020.
+//
+
+//
+//  parser.cpp
+//  HttpHighload
+//
+//  Created by Андронов Дмитрий on 14.04.2020.
+//  Copyright © 2020 Andronov Dima. All rights reserved.
+//
+
+#include "parser.h"
+#include <iostream>
+#include <cctype>
+#include <algorithm>
+#include <sstream>
+
+
+HttpRequest HTTPParser::parseHeader(std::string &query_) {
+    std::istringstream query{query_};
+    std::string line;
+    std::getline(query, line);
+    std::cout << line << std::endl;
+
+    auto methodEnd = line.find(' ');
+    auto uriEnd = line.find(' ', methodEnd + 1);
+
+    HttpReuestHeader httpHeader = {
+            line.substr(0, methodEnd),
+            line.substr(methodEnd + 1, uriEnd - 1 - methodEnd),
+            line.substr(uriEnd + 1, line.length() - uriEnd - 2)
+    };
+
+
+//    if (httpHeader.httpVersion != "HTTP/1.0" and httpHeader.httpVersion != "HTTP/1.1") {
+//           throw std::exception();
+//       }
+
+
+    Headers headers;
+    while (std::getline(query, line) && line != "\r") {
+        auto nameEnd = line.find(':');
+
+        auto name = line.substr(0, nameEnd);
+        toLowerString(name);
+
+        auto value = line.substr(nameEnd + 2, line.length() - nameEnd - 3);
+
+        headers.emplace(name, value);
+    }
+
+
+    return {httpHeader, headers};
+}
+
+std::string HTTPParser::decodeUri(std::string &uri){
+    std::string result;
+    char symb = 0;
+    unsigned code = 0;
+
+    for (int i = 0; i < uri.length(); i++) {
+        if (uri[i] != '%') {
+            if (uri[i] == '+') {
+                result += ' ';
+            } else {
+                result += uri[i];
+            }
+        } else {
+            sscanf(uri.substr(i + 1, 2).c_str(), "%x", &code);
+            symb = static_cast<char>(code);
+            result += symb;
+            i = i + 2;
+        }
+    }
+
+    return result;
+}
+
+void toLowerString(std::string &s) {
+    std::transform(s.begin(), s.end(), s.begin(), ::tolower);
+}
+
+
+std::string GetFormatDate() {
+    char buf[80];
+
+    auto now = time(nullptr);
+    auto timeInfo = gmtime(&now);
+
+    strftime(buf, 80, "%a, %d %b %Y %T GMT", timeInfo);
+
+    return buf;
+}
+
+std::string getExtension(std::string &p) {
+    if (p[p.length() - 1] == '/') {
+        return ".html";
+    }
+    fs::path filePath(p);
+    return filePath.extension().string();
+}
