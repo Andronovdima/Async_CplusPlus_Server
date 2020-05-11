@@ -1,0 +1,3 @@
+/Users/andronovdima/Desktop/Development/serv/CMakeFiles/rebuild_cache.dir
+/Users/andronovdima/Desktop/Development/serv/CMakeFiles/edit_cache.dir
+/Users/andronovdima/Desktop/Development/serv/CMakeFiles/server.dir

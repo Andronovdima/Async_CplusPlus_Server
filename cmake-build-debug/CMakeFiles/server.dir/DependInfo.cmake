@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/andronovdima/Desktop/serv/instance.cpp" "/Users/andronovdima/Desktop/serv/cmake-build-debug/CMakeFiles/server.dir/instance.cpp.o"
-  "/Users/andronovdima/Desktop/serv/main.cpp" "/Users/andronovdima/Desktop/serv/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o"
-  "/Users/andronovdima/Desktop/serv/parser.cpp" "/Users/andronovdima/Desktop/serv/cmake-build-debug/CMakeFiles/server.dir/parser.cpp.o"
-  "/Users/andronovdima/Desktop/serv/server.cpp" "/Users/andronovdima/Desktop/serv/cmake-build-debug/CMakeFiles/server.dir/server.cpp.o"
+  "/Users/andronovdima/Desktop/Development/serv/instance.cpp" "/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/CMakeFiles/server.dir/instance.cpp.o"
+  "/Users/andronovdima/Desktop/Development/serv/main.cpp" "/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o"
+  "/Users/andronovdima/Desktop/Development/serv/parser.cpp" "/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/CMakeFiles/server.dir/parser.cpp.o"
+  "/Users/andronovdima/Desktop/Development/serv/server.cpp" "/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/CMakeFiles/server.dir/server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

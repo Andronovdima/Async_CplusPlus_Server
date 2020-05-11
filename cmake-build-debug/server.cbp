@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/andronovdima/Desktop/serv/cmake-build-debug"/>
+				<Option working_dir="/Users/andronovdima/Desktop/Development/serv/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/andronovdima/Desktop/serv/cmake-build-debug"/>
+				<Option working_dir="/Users/andronovdima/Desktop/Development/serv/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/andronovdima/Desktop/serv/cmake-build-debug"/>
+				<Option working_dir="/Users/andronovdima/Desktop/Development/serv/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server">
-				<Option output="/Users/andronovdima/Desktop/serv/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/andronovdima/Desktop/serv/cmake-build-debug"/>
+				<Option output="/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/andronovdima/Desktop/Development/serv/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server/fast">
-				<Option output="/Users/andronovdima/Desktop/serv/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/andronovdima/Desktop/serv/cmake-build-debug"/>
+				<Option output="/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/andronovdima/Desktop/Development/serv/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,35 +73,35 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/andronovdima/Desktop/Development/serv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/andronovdima/Desktop/serv/instance.cpp">
+		<Unit filename="/Users/andronovdima/Desktop/Development/serv/instance.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/andronovdima/Desktop/serv/instance.h">
+		<Unit filename="/Users/andronovdima/Desktop/Development/serv/instance.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/andronovdima/Desktop/serv/main.cpp">
+		<Unit filename="/Users/andronovdima/Desktop/Development/serv/main.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/andronovdima/Desktop/serv/parser.cpp">
+		<Unit filename="/Users/andronovdima/Desktop/Development/serv/parser.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/andronovdima/Desktop/serv/parser.h">
+		<Unit filename="/Users/andronovdima/Desktop/Development/serv/parser.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/andronovdima/Desktop/serv/server.cpp">
+		<Unit filename="/Users/andronovdima/Desktop/Development/serv/server.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/andronovdima/Desktop/serv/server.h">
+		<Unit filename="/Users/andronovdima/Desktop/Development/serv/server.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/andronovdima/Desktop/serv/CMakeLists.txt">
+		<Unit filename="/Users/andronovdima/Desktop/Development/serv/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
