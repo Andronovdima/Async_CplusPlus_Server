@@ -176,24 +176,24 @@ void Worker::writeHeaders(bool isOK, std::string &uri, uintmax_t length, int cli
 }
 
 void Worker::writeFile(std::string &uri, int clientSocket) {
-    std::string line;
+    auto size = fs::file_size(uri);
+    auto fd = open(uri.c_str(), O_RDONLY);
+    // TODO add check if file opened
 
-    std::ifstream file(uri) ;
-
-    if (file.is_open())
-    {
-        while (getline(file, line))
-        {
-            line = line + "\n";
-            ::send(clientSocket, line.c_str() , line.size() , 0);
+    while (size != 0) {
+        auto written = sendfile(clientSocket, fd, nullptr, size);
+        if (written != -1) {
+            size -= written;
+        } else {
+            if (errno == EWOULDBLOCK || errno == EAGAIN) {
+                // TODO add something useful here mb
+            }
+            close(fd);
+            return;
         }
-    } else {
-        std::cout << "can't open file " + uri << std::endl;
-        return;
     }
 
-    file.close();
-    return;
+    close(fd);
 }
 
 //void Worker::setNonBlocked(int socket ,bool opt) throw (std::exception) {
