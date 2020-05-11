@@ -14,6 +14,7 @@
 #include <sys/socket.h> // sockets
 #include <netinet/in.h> // sockaddr_in
 #include <unistd.h> // close socket
+#include <sys/sendfile.h>
 #include <fcntl.h> // for O_RDONLY
 
 #include "parser.h"

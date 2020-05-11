@@ -8,7 +8,7 @@ Worker::Worker(std::string &rootPath, const int buffSiz) : docRootPath(rootPath)
 
 void Worker::run(int socket) {
     signal(SIGPIPE, SIG_IGN);
-    int threadsNum = 20;
+    int threadsNum = 3;
     std::vector<std::thread> threads;
     for (int i = 0; i < threadsNum; i++) {
         std::thread thread([this](int l) {

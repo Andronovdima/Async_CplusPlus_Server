@@ -13,8 +13,8 @@
 struct Config {
     const int port = 80;
     const int queueSocket = 30;
-    const int workersNumber = 4;
-    std::string documentRootPath = "/opt/hifroserver/http-test-suite";
+    const int workersNumber = 2;
+    std::string documentRootPath = "/usr/share/nginx/html";
     const int buffSize = 1024;
 };
 
