@@ -13,9 +13,10 @@
 struct Config {
     const int port = 80;
     const int queueSocket = 30;
-    const int workersNumber = 2;
+    int workersNumber = 2;
     std::string documentRootPath = "/usr/share/nginx/html";
     const int buffSize = 1024;
+    int threadLimit = 3;
 };
 
 
